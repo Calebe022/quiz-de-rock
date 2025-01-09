@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Rock</title>
+</head>
+<body>
+    <div id="menu">
+        <h1>🥁 Quiz de Rock 🎸</h1>
+        <button onclick="startQuiz('facil')">Fácil</button>
+        <button onclick="startQuiz('medio')">Médio</button>
+        <button onclick="startQuiz('dificil')">Difícil</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <h2 id="question"></h2>
+        <div id="answers"></div>
+        <div id="feedback" style="display: none;"></div>
+        <button id="continue-btn" onclick="continueQuiz()" style="display: none;">Continuar</button>
+    </div>
+        </div>
+        <div id="feedback"></div>
+        <div id="score"></div>
+    </div>
+
+    <div id="result" style="display: none;">
+        <h2>Resultados</h2>
+        <p id="acertos"></p>
+        <p id="erros"></p>
+        <button onclick="resetQuiz()">Reiniciar</button>
+        <button onclick="backToMenu()">Voltar ao Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
