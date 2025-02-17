@@ -248,7 +248,6 @@ function loadQuestion() {
         answersDiv.appendChild(answerDiv);
     });
 
-    // Esconder feedback e continuar botão
     document.getElementById('feedback').style.display = 'none';
     document.getElementById('continue-btn').style.display = 'none';
 }
@@ -264,7 +263,6 @@ function checkAnswer(selected, question) {
         feedback.innerHTML = `<p class="error">Errou! ❌</p><p>${question.explanation}</p>`;
     }
 
-    // Mostrar explicação e botão "Continuar"
     document.getElementById('feedback').style.display = 'block';
     document.getElementById('continue-btn').style.display = 'inline-block';
 }
@@ -276,7 +274,7 @@ function showConfetti() {
         confetti.style.left = Math.random() * window.innerWidth + 'px';
         confetti.style.animationDuration = (Math.random() * 1 + 1) + 's';
         document.body.appendChild(confetti);
-        setTimeout(() => confetti.remove(), 2000); // Remover confete após animação
+        setTimeout(() => confetti.remove(), 2000);
     }
 }
 
